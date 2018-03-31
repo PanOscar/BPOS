@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>BPoS - Quiz</title>
+		<meta name="description" content="BPoS">
+		<meta name="keywords" content="BPoS">
+		<meta name="author" content="BPOB">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="Stylesheet" type="text/css" href="css/reset.css" >
+		<link rel="Stylesheet" type="text/css" href="css/normalize.css" >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="quiz.js"></script>
+		<!--FAVICON -->
+			<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+			<link rel="manifest" href="favicons/manifest.json">
+			<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#a327a6">
+			<meta name="theme-color" content="#701d1d">
+	</head>
+	<body>
+		<div class="background"></div>
+		<nav>
+			<div class="nav">
+					<a href="lebron.html"><div class="li blurred-bg bialy"><img src="img/Lebron.png" class="zdj_nav" alt="Lebron"><span class="zdj">Lebron James</span></div></a>
+					<a href="ozil.html"><div class="li blurred-bg bialy"><img src="img/Ozil.png"  class="zdj_nav" alt="Ozil"><span class="zdj">Mesut Özil</span></div></a>
+					<a href="nadal.html"><div class="li blurred-bg bialy"><img src="img/Nadal.png"  class="zdj_nav" alt="Nadal"><span class="zdj">Rafael Nadal</span></div></a>
+					<a href="fax.html"><div class="li blurred-bg bialy"><span>FAX</span></div></a>
+					<a href="quiz.html"><div class="li blurred-bg bialy"><span>Quiz</span></div></a>
+			</div>
+		</nav>
+		<main>
+			<div class="box blurred-bg bialy">
+				<div class="content">
+					<form class="quiz" style="height:400px">
+						<div class="question" question="1">
+							<p><b>W jakiej drużynie obecnie występuje Lebron James?</b></p><br>
+							<label><input name="pytanie1" value="0" type="radio"><p>Cleveland Cavaliers</p></label>
+							<label><input name="pytanie1" value="1" type="radio"><p>Miami Heat</p></label>
+							<label><input name="pytanie1" value="2" type="radio"><p>Golden State Warriors</p></label>
+							<label><input name="pytanie1" value="3" type="radio"><p>Los Angeles Lakers</p></label><br>
+							<label><input type="button" value="Dalej" onclick="CheckQuestion(1)"/>
+						</div>
+						<div class="question hidden" question="2">
+							<p><b>W którym roku urodził się Mesut Özil?</b></p><br>
+							<label><input name="pytanie2" value="0" type="radio"><p>2017</p></label>
+							<label><input name="pytanie2" value="1" type="radio"><p>1984</p></label>
+							<label><input name="pytanie2" value="2" type="radio"><p>1999</p></label>
+							<label><input name="pytanie2" value="3" type="radio"><p>1988</p></label><br>
+							<input type="button" value="Dalej" onclick="CheckQuestion(2)"/>
+						</div>
+						<div class="question hidden" question="3">
+							<p><b>Jak na nazwisko ma Rafael? </b></p><br>
+							<label><input name="pytanie3" value="0" type="radio"><p>Madal</p></label>
+							<label><input name="pytanie3" value="1" type="radio"><p>Nadal</p></label>
+							<label><input name="pytanie3" value="2" type="radio"><p>Dupral</p></label>
+							<label><input name="pytanie3" value="3" type="radio"><p>Wandal</p></label><br>
+							<input type="button" value="Dalej" onclick="CheckQuestion(3)"/>
+						</div>
+						<div class="question hidden" question="4">
+							<p><b>Skąd pochodzi Rafael?</b></p><br>
+							<label><input name="pytanie4" value="0" type="radio"><p>z Polski</p></label>
+							<label><input name="pytanie4" value="1" type="radio"><p>z Hiszpani</p></label>
+							<label><input name="pytanie4" value="2" type="radio"><p>Z Włoch</p></label>
+							<label><input name="pytanie4" value="3" type="radio"><p>Z USA</p></label><br>
+							<input type="button" value="Dalej" onclick="CheckQuestion(4)"/>
+						</div>
+						<div class="question hidden" question="5">
+							<p><b>Na jakiej pozycji gra Özil?</b></p><br>
+							<label><input name="pytanie5" value="0" type="radio"><p>kibic</p></label>
+							<label><input name="pytanie5" value="1" type="radio"><p>bramkarz</p></label>
+							<label><input name="pytanie5" value="2" type="radio"><p>lewy skrzydłowy napastnik</p></label>
+							<label><input name="pytanie5" value="3" type="radio"><p>środkowy ofensywny pomocnik</p></label><br>
+							<input type="button" value="Dalej" onclick="CheckQuestion(5)"/>
+						</div>
+						<div class="question hidden" question="6">
+							<p><b>Ile meczy zagrał Lebron w swojej karierze?</b></p><br>
+							<label><input name="pytanie6" value="0" type="radio"><p>0</p></label>
+							<label><input name="pytanie6" value="1" type="radio"><p>294</p></label>
+							<label><input name="pytanie6" value="2" type="radio"><p>1 061</p></label>
+							<label><input name="pytanie6" value="3" type="radio"><p>10 201</p></label><br>
+							<input type="button" value="Dalej" onclick="CheckQuestion(6)"/>
+						</div>
+						<div class="question hidden" question="7">
+							<p><b>Co wspólnego mają ze sobią Ci trzej zawodnicy? </b></p><br>
+							<label><input name="pytanie7" value="0" type="radio"><p>Powyżej 500 meczy w karierze</p></label>
+							<label><input name="pytanie7" value="1" type="radio"><p>Byli na wspólnym piwie</p></label>
+							<label><input name="pytanie7" value="2" type="radio"><p>Każdy urodził się w roku 1988</p></label>
+							<label><input name="pytanie7" value="3" type="radio"><p>Pochodzą z USA</p></label><br>
+							<input type="button" value="Dalej" onclick="CheckQuestion(7)"/>
+						</div>
+						<div class="question hidden" question="8">
+							<p style="font-size:3em"><b>Twój wynik to <span style="font-size:1.5em" id="wynik"></span>/7</b></p><br>
+							
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="stopa">
+				<p> Webdesigned & Webdevelopment by <br> BPOB<br> &copy; All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
